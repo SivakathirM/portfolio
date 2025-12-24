@@ -221,13 +221,17 @@ li:hover{
         position: absolute;
         left: 0;
         background-color: white;
-        display: none;
+        align-items: center;
         color: #121f28;
-        text-align: center;
         padding-top: 30px;
         width: 100%;
+        display: block;
         margin-top: -20px;
         height: 100vh;
+    }
+    
+    .hidden{
+        display: none;
     }
     
     .close-icon{
@@ -239,12 +243,13 @@ li:hover{
     .responsive ul{
         display: flex;
         flex-direction: column;
-        padding-inline: 50px;
+        /* padding-inline: 50px; */
     }
     
     .responsive ul li{
         text-align: center;
         margin: 5px;
+        width: 50%;
     }
 
     .responsive ul li:hover{

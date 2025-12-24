@@ -1,16 +1,12 @@
 export default function Header(){
     const menuClick = () => {
         let menu = document.getElementById("responsive");
-        if (menu.classList.contains("responsive")) {
-            menu.style.display="block"
-        }   
+        menu.classList.remove("hidden")
     }
 
     const closeMenu = () => {
         let menu = document.getElementById("responsive");
-        if (menu.classList.contains("responsive")) {
-            menu.style.display="none"
-        }   
+        menu.classList.add("hidden")
     }
 
     return(
@@ -25,7 +21,7 @@ export default function Header(){
                 <li>Contact</li>
             </ul>
         </nav>
-        <nav className="responsive" id="responsive">
+        <nav className="responsive hidden" id="responsive">
             <i className="fa fa-times close-icon" onClick={closeMenu}></i>
             <ul className="responsive">
                 <li>Home</li>
