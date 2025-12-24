@@ -1,19 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: #ededed;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
-.header{
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,17 +27,17 @@ body::-webkit-scrollbar{
     z-index: 100;
 }
 
-.header i{
+.header i {
     display: none;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     text-decoration: none;
     color: white;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -44,47 +45,44 @@ ul{
     color: white;
 }
 
-.responsive{
-    display: none;
-}
-li{
+li {
     margin-inline: 5px;
     padding: 4px 8px;
     cursor: pointer;
 }
 
-li:hover{
+li:hover {
     background: white;
     color: #fd705a;
     border-radius: 5px;
 }
 
-.container{
+.container {
     margin-top: 59px;
-    background-color:  #121f28;
+    background-color: #121f28;
 }
 
-.introction{
+.introction {
     padding: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.details{
+.details {
     padding-top: 30px;
 }
 
-.details >h4{
+.details>h4 {
     color: #b9b0b0;
     margin-left: -40px;
     padding: 5px;
 }
 
-.details >h2 span{
+.details>h2 span {
     color: #fd705a;
 }
 
-.details >h4::before{
+.details>h4::before {
     content: '';
     display: inline-block;
     background: #fd705a;
@@ -92,15 +90,16 @@ li:hover{
     height: 3px;
 }
 
-.details >h1,h2{
+.details>h1,
+h2 {
     color: #ededed;
 }
 
-.resume{
+.resume {
     margin-top: 40px;
 }
 
-.resume > :first-child{
+.resume> :first-child {
     background-color: #fd705a;
     color: white;
     padding: 5px 10px;
@@ -111,8 +110,8 @@ li:hover{
     cursor: pointer;
 }
 
-.resume > :nth-child(2){
-    background:transparent;
+.resume> :nth-child(2) {
+    background: transparent;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -123,7 +122,7 @@ li:hover{
     cursor: pointer;
 }
 
-.image{
+.image {
     width: 180px;
     height: 180px;
     border-radius: 50%;
@@ -132,7 +131,7 @@ li:hover{
     background-position: center;
 }
 
-.language{
+.language {
     background-color: #17242d;
     color: #25323b;
     margin-top: 40px;
@@ -141,62 +140,63 @@ li:hover{
     padding: 15px;
 }
 
-.about-me{
+.about-me {
     margin-top: 30px;
     padding: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.devlopment{
+.devlopment {
     width: 50vw;
 }
 
-.devlopment >div{
+.devlopment>div {
     color: #b9b0b0;
     font-size: 20px;
 }
 
-.devlopment > div>i{
+.devlopment>div>i {
     font-size: 25px;
     margin: 30px 20px;
     color: #fd705a;
 }
 
-.me{
+.me {
     width: 50vw;
 }
 
-.about >h1{
+.about>h1 {
     color: white;
 }
 
-.about >p{
+.about>p {
     color: #b9b0b0;
     padding-block: 20px;
 }
 
-.number{
+.number {
     display: flex;
 }
 
-.number > div > h1{
+.number>div>h1 {
     color: white;
 }
 
-.number > div >p{
+.number>div>p {
     width: 50%;
     color: #b9b0b0;
 }
 
-.num-one::after, .num-three::after{
+.num-one::after,
+.num-three::after {
     content: ' +';
     color: #fd705a;
     width: 40%;
     height: 3px;
 }
 
-.num-two::after{
+.num-two::after {
     content: ' %';
     color: #fd705a;
     width: 40%;
@@ -205,19 +205,22 @@ li:hover{
 
 
 @media (max-width: 480px) {
-    .navbar{
+    .navbar {
         display: none;
     }
-    .header{
+
+    .header {
         height: 59px;
     }
-    .header i{
+
+    .header i {
         display: block;
         color: #b9b0b0;
         font-size: 25px;
         margin-top: 5px;
     }
-    .responsive{
+
+    .responsive {
         position: absolute;
         left: 0;
         background-color: white;
@@ -225,91 +228,97 @@ li:hover{
         color: #121f28;
         padding-top: 30px;
         width: 100%;
-        display: block;
-        margin-top: -20px;
+        margin-top: -10px;
         height: 100vh;
     }
-    
-    .hidden{
-        display: none;
-    }
-    
-    .close-icon{
-        text-align:end;
+
+    .close-icon {
+        text-align: end;
         color: #121f28;
         cursor: pointer;
-        margin: 20px;
+        margin: 15px;
     }
-    .responsive ul{
+
+    .responsive ul {
         display: flex;
         flex-direction: column;
-        /* padding-inline: 50px; */
     }
-    
-    .responsive ul li{
+
+    .responsive ul li {
         text-align: center;
         margin: 5px;
         width: 50%;
     }
 
-    .responsive ul li:hover{
+    .responsive ul li:hover {
         border: 2px solid #fd705a;
     }
-    .introction{
+
+    .introction {
         display: flex;
         flex-direction: column;
         padding: 0;
     }
-    .details{
+
+    .details {
         text-align: center;
     }
 
-    .details > h4::before{
+    .details>h4::before {
         display: none;
     }
-    .details>h4{
+
+    .details>h4 {
         margin: auto;
         width: fit-content;
     }
-    .details >h4::after{
-    content: '';
-    display: block;
-    background: #fd705a;
-    width: 100%;
-    height: 3px;
+
+    .details>h4::after {
+        content: '';
+        display: block;
+        background: #fd705a;
+        width: 100%;
+        height: 3px;
     }
-    .image{
+
+    .image {
         margin: auto;
         margin-top: 30px;
     }
-    .language{
+
+    .language {
         padding: 5px;
         justify-content: space-between;
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
-    .about-me{
+
+    .about-me {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin-top: 0px;
     }
-    .devlopment{
-        width: 100%;
-    }
-    .me{
-        width: 100%;
-    }
-    .devlopment >div{
-    font-size: 20px;
-}
 
-.devlopment > div>i{
-    font-size: 20px;
-    margin: 20px 10px;
-}
-    .number > div >p{
-    width: 100%;
+    .devlopment {
+        width: 100%;
+    }
+
+    .me {
+        width: 100%;
+    }
+
+    .devlopment>div {
+        font-size: 20px;
+    }
+
+    .devlopment>div>i {
+        font-size: 20px;
+        margin: 20px 10px;
+    }
+
+    .number>div>p {
+        width: 100%;
     }
 
 }

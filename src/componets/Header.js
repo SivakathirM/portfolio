@@ -1,19 +1,13 @@
+import { useState } from "react";
+
 export default function Header(){
-    const menuClick = () => {
-        let menu = document.getElementById("responsive");
-        menu.classList.remove("hidden")
-    }
-
-    const closeMenu = () => {
-        let menu = document.getElementById("responsive");
-        menu.classList.add("hidden")
-    }
-
+    const [show,setShow]=useState(false)
+    
     return(
        <header className="header">
         <a href="#" className="logo">Sivakathir</a>
-        <i className="fa fa-bars" onClick={menuClick}></i>
-        <nav className="navbar" id="navbar">    
+        <i className="fa fa-bars" onClick={()=>setShow(true)}></i>
+        <nav className="navbar">    
             <ul>
                 <li>Home</li>   
                 <li>About</li>
@@ -21,15 +15,15 @@ export default function Header(){
                 <li>Contact</li>
             </ul>
         </nav>
-        <nav className="responsive hidden" id="responsive">
-            <i className="fa fa-times close-icon" onClick={closeMenu}></i>
+        {show && <nav className="responsive">
+            <i className="fa fa-times close-icon" onClick={()=>setShow(false)}></i>
             <ul className="responsive">
                 <li>Home</li>
                 <li>About</li>
                 <li>project</li>
                 <li>Contact</li>
             </ul>
-        </nav>
+        </nav>}
     </header> 
     )
 }
